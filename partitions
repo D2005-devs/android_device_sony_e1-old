@@ -1,0 +1,23 @@
+ 179        1       2048 mmcblk0p1	TA
+ 179        2       1024 mmcblk0p2	sbl1
+ 179        3        128 mmcblk0p3	dbi
+ 179        4        512 mmcblk0p4	aboot
+ 179        5        512 mmcblk0p5	rpm
+ 179        6        512 mmcblk0p6	tz
+ 179        7       1024 mmcblk0p7	alt_sbl1
+ 179        8        128 mmcblk0p8	alt_dbi
+ 179        9        512 mmcblk0p9	alt_aboot
+ 179       10        512 mmcblk0p10	alt_rpm
+ 179       11        512 mmcblk0p11	alt_tz
+ 179       12       1536 mmcblk0p12	fsg
+ 179       13       1536 mmcblk0p13	modemst1
+ 179       14       1536 mmcblk0p14	modemst2
+ 179       15      20480 mmcblk0p15	boot
+ 179       16      16384 mmcblk0p16	FOTAKernel
+ 179       17      16384 mmcblk0p17	LTALabel
+ 179       18       8192 mmcblk0p18	apps_log
+ 179       19    1402880 mmcblk0p19	system
+ 179       20     204800 mmcblk0p20	cache
+ 179       21    2125807 mmcblk0p21	userdata
+
+
