@@ -27,7 +27,6 @@ BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 maxcpus=2 msm_rt
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_BASE := 0x00008000
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01E00000 --dt kernel.elf.3
-TARGET_PREBUILT_KERNEL := device/sony/e1/kernel
 
 # Audio
 TARGET_QCOM_AUDIO_VARIANT := caf
