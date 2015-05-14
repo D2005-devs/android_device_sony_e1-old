@@ -18,6 +18,7 @@ TARGET_GLOBAL_CFLAGS += -mtune=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=softfp
 
 TARGET_SPECIFIC_HEADER_PATH += device/sony/e1/include
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/e1/bluetooth
 
 # Inline kernel building
 TARGET_KERNEL_SOURCE := kernel/sony/msm8610
