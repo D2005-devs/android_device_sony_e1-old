@@ -16,9 +16,8 @@ TARGET_PROVIDES_ADRENO_DRIVER := true
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-$(call inherit-product, vendor/sony/falconss/falconss-vendor.mk)
+$(call inherit-product, vendor/sony/e1/e1-vendor.mk)
 $(call inherit-product, device/sony/common/resources.mk)
-$(call inherit-product, device/sony/qcom-common/qcom-common.mk)
 
 $(call inherit-product-if-exists, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
@@ -43,7 +42,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml
 
 # Platform specific overlays
-DEVICE_PACKAGE_OVERLAYS := device/sony/falconss/overlay
+DEVICE_PACKAGE_OVERLAYS := device/sony/e1/overlay
 
 PRODUCT_TAGS += dalvik.gc.type-precise
 

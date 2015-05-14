@@ -17,7 +17,7 @@ TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_GLOBAL_CFLAGS += -mtune=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a7 -mfpu=neon-vfpv4 -mfloat-abi=softfp
 
-TARGET_SPECIFIC_HEADER_PATH += device/sony/falconss/include
+TARGET_SPECIFIC_HEADER_PATH += device/sony/e1/include
 
 # Inline kernel building
 BOARD_KERNEL_SEPARATED_DT := true
@@ -27,7 +27,7 @@ BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 maxcpus=2 msm_rt
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_BASE := 0x00008000
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01E00000 --dt kernel.elf.3
-TARGET_PREBUILT_KERNEL := device/sony/falconss/kernel
+TARGET_PREBUILT_KERNEL := device/sony/e1/kernel
 
 # Audio
 TARGET_QCOM_AUDIO_VARIANT := caf
@@ -40,7 +40,7 @@ AUDIO_FEATURE_DISABLED_DS1_DOLBY_DDP := true
 TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/falconss/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/e1/bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 BLUETOOTH_HCI_USE_MCT := true
@@ -59,7 +59,7 @@ TARGET_ARCH_LOWMEM := true
 
 # Graphics
 TARGET_QCOM_DISPLAY_VARIANT := caf-new
-BOARD_EGL_CFG := device/sony/falconss/prebuilt/system/lib/egl/egl.cfg
+BOARD_EGL_CFG := device/sony/e1/prebuilt/system/lib/egl/egl.cfg
 USE_OPENGL_RENDERER := true
 TARGET_USES_ION := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
@@ -68,7 +68,7 @@ MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
 
 # Hardware tunables framework
-BOARD_HARDWARE_CLASS := device/sony/falconss/cmhw/
+BOARD_HARDWARE_CLASS := device/sony/e1/cmhw/
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
@@ -95,12 +95,12 @@ BOARD_USES_QCOM_HARDWARE := true
 COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE
 
 # Recovery
-TARGET_RECOVERY_FSTAB := device/sony/falconss/ramdisk/fstab.qcom
+TARGET_RECOVERY_FSTAB := device/sony/e1/ramdisk/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness\"
 TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_HAS_NO_SELECT_BUTTON := true
-BOARD_CUSTOM_BOOTIMG_MK := device/sony/falconss/custombootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/sony/e1/custombootimg.mk
 
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true

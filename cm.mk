@@ -12,26 +12,20 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit CM common GSM stuff.
-$(call inherit-product, vendor/cm/config/gsm.mk)
-
-# Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
-
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/sony/falconss/device_falconss.mk)
+$(call inherit-product, device/sony/e1/device_e1.mk)
 
 TARGET_SCREEN_HEIGHT := 854
 TARGET_SCREEN_WIDTH := 480
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := falconss
-PRODUCT_NAME := cm_falconss
+PRODUCT_DEVICE := e1
+PRODUCT_NAME := cm_e1
 PRODUCT_BRAND := Sony
-PRODUCT_MODEL := falconss
+PRODUCT_MODEL := e1
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_CHARACTERISTICS := phone
 
