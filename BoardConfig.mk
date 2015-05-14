@@ -22,7 +22,7 @@ TARGET_SPECIFIC_HEADER_PATH += device/sony/e1/include
 # Inline kernel building
 BOARD_KERNEL_SEPARATED_DT := true
 TARGET_KERNEL_SOURCE := kernel/sony/msm8610
-TARGET_KERNEL_CONFIG := msm8610_build_defconfig
+TARGET_KERNEL_CONFIG := msm8610_defconfig
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 maxcpus=2 msm_rtb.filter=0x3F ehci-hcd.park=3 msm_rtb.enable=0 lpj=192598 dwc3.maximum_speed=high dwc3_msm.prop_chg_detect=Y
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_BASE := 0x00008000
